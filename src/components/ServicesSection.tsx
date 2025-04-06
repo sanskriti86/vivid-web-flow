@@ -5,10 +5,8 @@ import { Button } from "@/components/ui/button";
 import { 
   Globe, 
   Smartphone, 
-  Code, 
   Search, 
-  LineChart, 
-  Mail,
+  ShoppingBag,
   ChevronRight
 } from "lucide-react";
 
@@ -57,7 +55,7 @@ const ServicesSection = () => {
     },
     {
       icon: <Smartphone className="h-12 w-12 text-primary" />,
-      title: "Mobile App Development",
+      title: "App Development",
       description: "Native and cross-platform mobile applications that deliver exceptional user experiences on any device.",
       details: [
         "iOS Development", 
@@ -67,19 +65,8 @@ const ServicesSection = () => {
       ]
     },
     {
-      icon: <Code className="h-12 w-12 text-primary" />,
-      title: "Custom Software",
-      description: "Tailored software solutions designed to streamline operations and solve specific business challenges.",
-      details: [
-        "Business Analysis", 
-        "Software Architecture", 
-        "Development & Testing", 
-        "Deployment & Support"
-      ]
-    },
-    {
       icon: <Search className="h-12 w-12 text-primary" />,
-      title: "SEO Optimization",
+      title: "Search Engine Optimization",
       description: "Data-driven strategies to improve your visibility in search engines and attract qualified traffic.",
       details: [
         "Keyword Research", 
@@ -89,25 +76,14 @@ const ServicesSection = () => {
       ]
     },
     {
-      icon: <LineChart className="h-12 w-12 text-primary" />,
-      title: "Digital Marketing",
-      description: "Comprehensive marketing solutions to boost your online presence and connect with your target audience.",
+      icon: <ShoppingBag className="h-12 w-12 text-primary" />,
+      title: "Shopify Store Development",
+      description: "Custom Shopify stores designed to showcase your products and maximize conversions.",
       details: [
-        "PPC Advertising", 
-        "Social Media Marketing", 
-        "Content Strategy", 
-        "Email Campaigns"
-      ]
-    },
-    {
-      icon: <Mail className="h-12 w-12 text-primary" />,
-      title: "Email Marketing",
-      description: "Effective email campaigns that nurture leads, boost engagement, and drive conversions.",
-      details: [
-        "Campaign Strategy", 
-        "Email Design", 
-        "Automation Setup", 
-        "Performance Analysis"
+        "Store Setup", 
+        "Theme Customization", 
+        "App Integration", 
+        "Store Optimization"
       ]
     }
   ];
@@ -122,7 +98,7 @@ const ServicesSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <ServiceCard key={index} service={service} index={index} />
           ))}
