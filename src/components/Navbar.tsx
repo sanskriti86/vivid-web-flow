@@ -46,7 +46,7 @@ const Navbar = () => {
           href="#home" 
           className="text-2xl font-bold heading-gradient"
         >
-          YourBrand
+         Web Ascend
         </a>
 
         {/* Desktop Navigation */}
@@ -88,7 +88,7 @@ const Navbar = () => {
                 </a>
               ))}
               <Button className="bg-primary hover:bg-primary/90 shadow-lg shadow-primary/20 font-medium w-full">
-                Get Started
+                <a href="#contact">Get Started</a>
               </Button>
             </nav>
           </div>
