@@ -61,7 +61,7 @@ const Navbar = () => {
             </a>
           ))}
           <Button className="bg-primary hover:bg-primary/90 shadow-lg shadow-primary/20 font-medium">
-            Get Started
+            <a href="#contact">Get Started</a>
           </Button>
         </nav>
 

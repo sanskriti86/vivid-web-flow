@@ -44,13 +44,17 @@ const HeroSection = () => {
               helping you stand out in today's competitive digital landscape.
             </p>
             <div className="hero-animate opacity-0 flex flex-col sm:flex-row gap-4 delay-200">
-              <Button className="bg-primary hover:bg-primary/90 shadow-lg shadow-primary/20 text-white px-6 py-6 text-lg rounded-lg">
-                Get Started
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button variant="outline" className="border-primary text-primary hover:bg-primary/5 px-6 py-6 text-lg rounded-lg">
-                Learn More
-              </Button>
+              <a href="#contact">
+                <Button className="bg-primary hover:bg-primary/90 shadow-lg shadow-primary/20 text-white px-6 py-6 text-lg rounded-lg w-full sm:w-auto">
+                  Get Started
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </a>
+              <a href="#services">
+                <Button variant="outline" className="border-primary text-primary hover:bg-primary/5 px-6 py-6 text-lg rounded-lg w-full sm:w-auto">
+                  Learn More
+                </Button>
+              </a>
             </div>
           </div>
           <div className="flex-1 hero-animate opacity-0">
