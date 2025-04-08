@@ -12,12 +12,19 @@ import {
   Send,
   CheckCircle2
 } from "lucide-react";
+import emailjs from 'emailjs-com';
 
 const ContactSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
+  const formRef = useRef<HTMLFormElement>(null);
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  
+  // Initialize EmailJS
+  useEffect(() => {
+    emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS user ID
+  }, []);
   
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -56,9 +63,17 @@ const ContactSection = () => {
     const email = formData.get('email') as string;
     const message = formData.get('message') as string;
     
-    // This would be replaced with an actual API call in production
-    setTimeout(() => {
-      console.log("Form submitted:", { name, email, message });
+    console.log("Form submitted:", { name, email, message });
+
+    // Send the email using EmailJS
+    emailjs.sendForm(
+      'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
+      'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+      e.currentTarget as HTMLFormElement,
+      'YOUR_USER_ID' // Replace with your EmailJS user ID
+    )
+    .then((result) => {
+      console.log('Email successfully sent!', result.text);
       setIsSubmitting(false);
       setIsSuccess(true);
       
@@ -68,13 +83,25 @@ const ContactSection = () => {
       });
       
       // Reset the form
-      (e.target as HTMLFormElement).reset();
+      if (formRef.current) {
+        formRef.current.reset();
+      }
       
       // Reset success state after a delay
       setTimeout(() => {
         setIsSuccess(false);
       }, 3000);
-    }, 1500);
+    })
+    .catch((error) => {
+      console.error('Failed to send email:', error);
+      setIsSubmitting(false);
+      
+      toast({
+        title: "Error",
+        description: "Failed to send your message. Please try again later.",
+        variant: "destructive",
+      });
+    });
   };
   
   const contactInfo = [
@@ -116,7 +143,7 @@ const ContactSection = () => {
                 <h3 className="text-2xl font-bold">Send Us A Message</h3>
               </div>
               
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 gap-6">
                   <div className="space-y-2">
                     <Label htmlFor="name">Your Name</Label>
