@@ -6,8 +6,7 @@ import { Label } from "@/components/ui/label";
 import { useToast } from "@/components/ui/use-toast";
 import { 
   Mail, 
-  Phone, 
-  MapPin,
+  Phone,
   Send,
   CheckCircle2
 } from "lucide-react";
@@ -113,12 +112,6 @@ const ContactSection = () => {
       title: "Phone",
       value: "+91 9977827050",
       link: "tel:+919977827050"
-    },
-    {
-      icon: <MapPin className="h-6 w-6 text-primary" />,
-      title: "Address",
-      value: "123 Business Avenue, Tech Park, City",
-      link: "https://maps.google.com"
     }
   ];
 
