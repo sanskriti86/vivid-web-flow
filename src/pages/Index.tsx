@@ -9,6 +9,7 @@ import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 import AnimationObserver from "@/components/AnimationObserver";
+import BookCallButton from "@/components/BookCallButton";
 
 const Index = () => {
   // Add smooth scrolling behavior
@@ -45,6 +46,7 @@ const Index = () => {
       <ContactSection />
       <Footer />
       <ScrollToTopButton />
+      <BookCallButton isFloating={true} />
       <AnimationObserver />
     </div>
   );

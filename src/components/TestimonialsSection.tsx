@@ -1,4 +1,3 @@
-
 import { useState, useEffect, useRef } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -78,7 +77,7 @@ const TestimonialsSection = () => {
       position: "Marketing Director",
       company: "TechCorp",
       image: "https://randomuser.me/api/portraits/women/32.jpg",
-      text: "The web development services provided exceeded our expectations. Our online presence has significantly improved, resulting in a 40% increase in leads.",
+      text: "Their web development team delivered an exceptional website that increased our lead generation by 40%. The responsive design works perfectly across all devices.",
       rating: 5,
       platform: "general"
     },
@@ -88,7 +87,7 @@ const TestimonialsSection = () => {
       position: "CEO",
       company: "Innovate Inc.",
       image: "https://randomuser.me/api/portraits/men/54.jpg",
-      text: "The team demonstrated exceptional technical skills and creativity. They delivered our project ahead of schedule, and the results have been outstanding.",
+      text: "The custom web application they built streamlined our entire operation. Their team demonstrated exceptional technical skills and creativity throughout the project.",
       rating: 5,
       platform: "general"
     },
@@ -98,8 +97,8 @@ const TestimonialsSection = () => {
       position: "Product Manager",
       company: "Nexus Solutions",
       image: "https://randomuser.me/api/portraits/women/69.jpg",
-      text: "Working with this company has been a game-changer for our business. Their strategic approach and attention to detail are unmatched.",
-      rating: 4,
+      text: "The mobile app they developed for us has over 100,000 downloads with a 4.8 star rating. Their expertise in React Native delivered exactly what we needed.",
+      rating: 5,
       platform: "general"
     },
     {
@@ -108,7 +107,7 @@ const TestimonialsSection = () => {
       position: "Operations Director",
       company: "Global Enterprises",
       image: "https://randomuser.me/api/portraits/men/45.jpg",
-      text: "The custom software they developed streamlined our operations and reduced costs by 30%. Exceptional service from start to finish.",
+      text: "Their eCommerce website redesign increased our conversion rate by 35%. The UX improvements and performance optimizations made a significant impact on our sales.",
       rating: 5,
       platform: "general"
     },
@@ -118,7 +117,7 @@ const TestimonialsSection = () => {
       position: "CTO",
       company: "Digital Dynamics",
       image: "https://randomuser.me/api/portraits/men/22.jpg",
-      text: "I've been sharing our success story on LinkedIn. The SEO work they did for us resulted in a 200% increase in organic traffic within just 3 months.",
+      text: "I've shared our success story on LinkedIn. Their SEO work improved our organic traffic by 200% and their web application development skills are unmatched in the industry.",
       rating: 5,
       platform: "linkedin"
     },
@@ -128,7 +127,7 @@ const TestimonialsSection = () => {
       position: "Digital Marketing Manager",
       company: "Elevate Brand",
       image: "https://randomuser.me/api/portraits/women/17.jpg",
-      text: "Connected with this amazing team on LinkedIn. Their social media strategy transformed our brand perception and engagement rates.",
+      text: "Connected with this amazing development team on LinkedIn. Their progressive web app increased our user engagement metrics across all our digital platforms.",
       rating: 5,
       platform: "linkedin"
     },
@@ -138,8 +137,8 @@ const TestimonialsSection = () => {
       position: "Startup Founder",
       company: "InnovateTech",
       image: "https://randomuser.me/api/portraits/men/36.jpg",
-      text: "My LinkedIn network recommended this company, and they didn't disappoint. Excellent communication and outstanding results for our startup.",
-      rating: 4,
+      text: "My LinkedIn network recommended this development company for our startup's MVP. They delivered a scalable web application that helped us secure our first round of funding.",
+      rating: 5,
       platform: "linkedin"
     },
     {
@@ -148,7 +147,7 @@ const TestimonialsSection = () => {
       position: "Content Creator",
       company: "Create & Connect",
       image: "https://randomuser.me/api/portraits/men/12.jpg",
-      text: "As a YouTube content creator, I needed a website that reflects my brand. The team delivered a stunning site that perfectly captures my style.",
+      text: "As a YouTube content creator, I needed a custom web app to manage my content. Their development team built exactly what I needed with a beautiful interface.",
       rating: 5,
       platform: "youtube"
     },
@@ -158,7 +157,7 @@ const TestimonialsSection = () => {
       position: "YouTube Influencer",
       company: "TrendSetters",
       image: "https://randomuser.me/api/portraits/women/33.jpg",
-      text: "My YouTube channel grew exponentially after implementing their digital marketing strategy. Couldn't be happier with the results!",
+      text: "The mobile app they developed for my YouTube audience has been downloaded over 50,000 times. The user interface is incredibly intuitive and my followers love it!",
       rating: 5,
       platform: "youtube"
     },
@@ -168,8 +167,8 @@ const TestimonialsSection = () => {
       position: "Video Producer",
       company: "Visual Stories",
       image: "https://randomuser.me/api/portraits/men/74.jpg",
-      text: "The custom YouTube channel enhancement they provided has helped me stand out from the competition. Great service and support throughout!",
-      rating: 4,
+      text: "Their web development services helped me create an immersive portfolio site that showcases my YouTube productions. The custom video player functionality is fantastic.",
+      rating: 5,
       platform: "youtube"
     }
   ];
