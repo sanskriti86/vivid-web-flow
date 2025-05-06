@@ -6,7 +6,6 @@ import { Label } from "@/components/ui/label";
 import { useToast } from "@/components/ui/use-toast";
 import { 
   Mail, 
-  Phone,
   Send,
   CheckCircle2
 } from "lucide-react";
@@ -106,12 +105,6 @@ const ContactSection = () => {
       title: "Email",
       value: "sankalpgour2@gmail.com",
       link: "mailto:sankalpgour2@gmail.com"
-    },
-    {
-      icon: <Phone className="h-6 w-6 text-primary" />,
-      title: "Phone",
-      value: "+91 9977827050",
-      link: "tel:+919977827050"
     }
   ];
 
