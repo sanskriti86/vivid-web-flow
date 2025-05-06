@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { book } from "lucide-react";
+import { PhoneCall } from "lucide-react";
 
 interface BookCallButtonProps {
   className?: string;
@@ -16,10 +16,10 @@ const BookCallButton = ({ className = "", isFloating = false }: BookCallButtonPr
     return (
       <Button
         onClick={handleClick}
-        className={`fixed bottom-20 right-6 z-40 shadow-lg flex items-center gap-2 bg-primary hover:bg-primary/90 text-white font-medium rounded-full px-5 py-6 transition-all duration-300 hover:scale-105 ${className}`}
+        className={`fixed bottom-20 right-6 z-40 shadow-lg flex items-center gap-2 bg-gradient-to-r from-primary to-accent text-white font-medium rounded-full px-5 py-6 transition-all duration-300 hover:scale-105 hover:shadow-xl ${className}`}
         size="lg"
       >
-        <book className="h-5 w-5" />
+        <PhoneCall className="h-5 w-5 animate-pulse" />
         Book a Call
       </Button>
     );
@@ -28,10 +28,10 @@ const BookCallButton = ({ className = "", isFloating = false }: BookCallButtonPr
   return (
     <Button
       onClick={handleClick}
-      className={`flex items-center gap-2 bg-primary hover:bg-primary/90 text-white font-medium rounded-full px-5 py-6 transition-all duration-300 hover:scale-105 ${className}`}
+      className={`flex items-center gap-2 bg-gradient-to-r from-primary to-accent text-white font-medium rounded-full px-5 py-6 transition-all duration-300 hover:scale-105 hover:shadow-xl ${className}`}
       size="lg"
     >
-      <book className="h-5 w-5" />
+      <PhoneCall className="h-5 w-5 animate-pulse" />
       Book a Call
     </Button>
   );
